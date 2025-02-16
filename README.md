@@ -28,7 +28,12 @@ La arquitectura hexagonal, también conocida como Puertos y Adaptadores, es un p
     │   └── db
     │       └── database.go
     ├── infrastructure
+    │   ├── routers
+    │   │   ├── user
+    │   │   │   └── router.go
     │   ├── handler
+    │   │   ├── user
+    │   │   │   └── handler.go
     │   │   ├── request
     │   │   │   ├── fields.go
     │   │   │   ├── parameter.go
@@ -37,18 +42,16 @@ La arquitectura hexagonal, también conocida como Puertos y Adaptadores, es un p
     │   │   │   ├── message.go
     │   │   │   └── response.go
     │   │   ├── router.go
-    │   ├── user
-    │   │   ├── model
-    │   │   │   └── user.go
-    │   │   ├── repository
-    │   │   │   └── user_repository.go
-    │   │   ├── service
-    │   │   │   └── user_service.go
-    │   │   ├── handler
-    │   │   │   └── user_handler.go
-    │   │   └── router.go
+    │   ├── repository
+    │   │   ├── user
+    │   │   │   └── repository.go
     │   ├── util
     │   │   └── query_util.go
+    ├── domain
+    │   │   │	user.go
+    ├── application
+    │   ├── user
+    │   │   │   service.go
     ├── go.mod
     ├── go.sum
     └── docker-compose.yml
