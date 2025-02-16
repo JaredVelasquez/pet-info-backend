@@ -2,9 +2,9 @@ package user
 
 import (
 	"database/sql"
-	"pet-info-backend-docker/infraestructure/users/handler"
-	"pet-info-backend-docker/infraestructure/users/repository"
-	"pet-info-backend-docker/infraestructure/users/service"
+	service "pet-info-backend-docker/aplication/user"
+	handler "pet-info-backend-docker/infraestructure/handler/user"
+	repository "pet-info-backend-docker/infraestructure/repository/user"
 
 	"github.com/labstack/echo/v4"
 )

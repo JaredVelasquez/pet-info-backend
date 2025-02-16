@@ -1,8 +1,8 @@
-package service
+package user
 
 import (
-	"pet-info-backend-docker/infraestructure/users/model"
-	"pet-info-backend-docker/infraestructure/users/repository"
+	model "pet-info-backend-docker/domain/user"
+	repository "pet-info-backend-docker/infraestructure/repository/user"
 )
 
 // UserService define los métodos de negocio para los usuarios

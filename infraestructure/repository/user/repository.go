@@ -1,9 +1,9 @@
-package repository
+package user
 
 import (
 	"database/sql"
-	"pet-info-backend-docker/infraestructure/users/model"
-	"pet-info-backend-docker/infraestructure/users/util"
+	model "pet-info-backend-docker/domain/user"
+	"pet-info-backend-docker/infraestructure/util"
 )
 
 type UserRepository struct {

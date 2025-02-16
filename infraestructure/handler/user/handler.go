@@ -1,10 +1,10 @@
-package handler
+package user
 
 import (
 	"net/http"
+	service "pet-info-backend-docker/aplication/user"
+	model "pet-info-backend-docker/domain/user"
 	"pet-info-backend-docker/infraestructure/handler/response"
-	"pet-info-backend-docker/infraestructure/users/model"
-	"pet-info-backend-docker/infraestructure/users/service"
 
 	"github.com/labstack/echo/v4"
 )

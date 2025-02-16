@@ -2,7 +2,7 @@ package handler
 
 import (
 	"database/sql"
-	user "pet-info-backend-docker/infraestructure/users"
+	user "pet-info-backend-docker/infraestructure/routers/user"
 
 	"github.com/labstack/echo/v4"
 )
