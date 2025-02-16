@@ -1,0 +1,37 @@
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# Output of the build process
+/build/
+
+# Temporary files
+*.log
+*.tmp
+*.swp
+*~
+
+# Directory for IDE or editor-specific configurations
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Dependency directories
+/vendor/
+node_modules/
+
+# Environment variables
+.env
+.env.local
+
+# Air configuration file
+.air.toml
+
+# Docker files
+docker-compose.override.yml
