@@ -3,6 +3,7 @@ package db
 import (
 	"database/sql"
 	"fmt"
+	"io/ioutil"
 	"os"
 	"time"
 
@@ -26,6 +27,12 @@ func InitDB() (*sql.DB, error) {
 			err = db.Ping()
 			if err == nil {
 				fmt.Println("Connected to the database successfully!")
+
+				// Ejecutar el script de migración
+				if err := runMigration(db); err != nil {
+					return nil, err
+				}
+
 				return db, nil
 			}
 		}
@@ -34,4 +41,14 @@ func InitDB() (*sql.DB, error) {
 	}
 
 	return nil, fmt.Errorf("could not connect to the database after multiple attempts: %v", err)
+}
+
+// runMigration ejecuta el script de migración para crear las tablas si no existen
+func runMigration(db *sql.DB) error {
+	file, err := ioutil.ReadFile("migration/users.sql")
+	if err != nil {
+		return err
+	}
+	_, err = db.Exec(string(file))
+	return err
 }
