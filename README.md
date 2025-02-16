@@ -6,9 +6,11 @@ Pet Info Backend es una aplicación backend desarrollada en Go que proporciona u
 
 ## Tecnologías Utilizadas
 
-![Go](https://golang.org/lib/godoc/images/go-logo-blue.svg)
-![PostgreSQL](https://www.postgresql.org/media/img/about/press/elephant.png)
-![Docker](https://www.docker.com/sites/default/files/d8/2019-07/Moby-logo.png)
+<p align="center">
+    <img src="https://cdn.iconscout.com/icon/free/png-256/go-77-1175166.png" alt="Go Logo" width="100" height="100"/>
+    <img src="https://www.postgresql.org/media/img/about/press/elephant.png" alt="PostgreSQL Logo" width="100" height="100"/>
+    <img src="https://www.vectorlogo.zone/logos/docker/docker-icon.svg" alt="Docker Logo" width="100" height="100"/>
+</p>
 
 ## Descripción del Proyecto
 
