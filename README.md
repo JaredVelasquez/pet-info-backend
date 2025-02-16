@@ -2,6 +2,16 @@
 
 ## Descripción del Proyecto
 
+Pet Info Backend es una aplicación backend desarrollada en Go que proporciona una API para gestionar información sobre mascotas. Utiliza la arquitectura hexagonal para una mayor separación de funcionalidades y una mejor mantenibilidad del código. La aplicación está diseñada para ejecutarse en un contenedor Docker para facilitar su despliegue y administración.
+
+## Tecnologías Utilizadas
+
+![Go](https://golang.org/lib/godoc/images/go-logo-blue.svg)
+![PostgreSQL](https://www.postgresql.org/media/img/about/press/elephant.png)
+![Docker](https://www.docker.com/sites/default/files/d8/2019-07/Moby-logo.png)
+
+## Descripción del Proyecto
+
 Pet Info Backend es una aplicación backend desarrollada en Go que proporciona una API para gestionar información sobre mascotas. Utiliza la arquitectura hexagonal para una mayor separación de preocupaciones y una mejor mantenibilidad del código. La aplicación está diseñada para ejecutarse en un contenedor Docker para facilitar su despliegue y administración.
 
 ## Arquitectura Hexagonal
@@ -91,8 +101,3 @@ Asegúrate de que las variables de entorno necesarias para la conexión a la bas
 ### Verificar la API
 
 Una vez que los contenedores estén levantados, puedes verificar que la API esté funcionando correctamente utilizando curl o Postman.
-
-- Probar la obtención de usuarios:
-
-``` curl -X GET http://localhost:8080/users?username=johndoe
-```
