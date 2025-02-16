@@ -12,10 +12,6 @@ Pet Info Backend es una aplicación backend desarrollada en Go que proporciona u
     <img src="https://www.vectorlogo.zone/logos/docker/docker-icon.svg" alt="Docker Logo" width="100" height="100"/>
 </p>
 
-## Descripción del Proyecto
-
-Pet Info Backend es una aplicación backend desarrollada en Go que proporciona una API para gestionar información sobre mascotas. Utiliza la arquitectura hexagonal para una mayor separación de preocupaciones y una mejor mantenibilidad del código. La aplicación está diseñada para ejecutarse en un contenedor Docker para facilitar su despliegue y administración.
-
 ## Arquitectura Hexagonal
 
 La arquitectura hexagonal, también conocida como Puertos y Adaptadores, es un patrón de arquitectura de software que permite una separación clara entre el núcleo de la aplicación y los detalles de implementación. Esta arquitectura facilita la prueba de la lógica de negocio y la adaptabilidad de la aplicación a diferentes interfaces de usuario y tecnologías de infraestructura.
